@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/usr/bin/s3cmd put --skip-existing /tmp/*.tar.gz s3://zenvia-infracorp-backup/accounts/gmail/ --progress -v >> /tmp/output.log 2>&1
+/usr/bin/s3cmd put --skip-existing /tmp/*.tar.gz s3://folder/accounts/gmail/ --progress -v >> /tmp/output.log 2>&1
 rm -rf /tmp/*.tar.gz -v >> /tmp/output.log 2>&1
 
 banner() {
